@@ -1,23 +1,19 @@
-# Coding with an AI pair programmer
+# FieldFlow HR MVP
 
-[GitHub Copilot](https://github.com/features/copilot) is your AI pair programmer, built to support you throughout your development experience. As with any new tool, using GitHub Copilot requires learning a few new skills. This project is built to do exactly that, to give you an opportunity to build a project, using the language and tools you typically use, with GitHub Copilot.
+A dependency-free, responsive HR field-force management prototype. It runs as a static site and uses browser `localStorage` as an intentionally isolated data adapter (`store` in `app.js`) so the adapter can later be replaced with API calls.
 
-> **[Start hacking!](./hackathon.md)**
+## Run
 
-## Requirements
+Open `index.html` in a modern browser, or serve the folder with any static server (for example `python -m http.server`). Camera and geolocation permissions generally require `localhost` or HTTPS.
 
-This project is configured with a [devcontainer](./.devcontainer/devcontainer.json), which can be [run locally](https://code.visualstudio.com/docs/devcontainers/containers) or in a [codespace](https://github.com/features/codespaces). Please refer to the [setup exercise](./content/0-get-started.md) for more information.
+Use `employee@fieldflow.test` / `demo123` for the employee experience, or `admin@fieldflow.test` / `demo123` for the admin dashboard. The demo supports attendance with optional selfie capture, GPS, visits, orders, collections, leave requests, approvals, summary reports, and CSV export.
 
-The project does assume you are familiar with programming, but is not prescriptive about language or framework choice.
+This prototype stores demo data locally in the current browser only. Do not use it for real employee data until authentication, authorization, encryption, retention, and a server-side database are implemented.
 
-## License 
+## Repository
 
-This project is licensed under the terms of the MIT open source license. Please refer to [MIT](./LICENSE.txt) for the full terms.
+This MVP is built in the repository's existing hackathon starter project. See [hackathon.md](./hackathon.md) and the [development exercises](./content/0-get-started.md) for the broader project context.
 
-## Maintainers 
+## License
 
-You can find the list of maintainers in [CODEOWNERS](./.github/CODEOWNERS)
-
-## Support
-
-This project is provided as-is, and may be updated over time. If you have questions, please [open an issue](/issues/new).
+This project is licensed under the terms of the MIT open source license. See [LICENSE.txt](./LICENSE.txt).
